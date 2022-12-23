@@ -1,0 +1,132 @@
+/*id cuando quiere alterar comportamiento 
+    class cuando quieres alterar estilo*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.banner{
+    width:100%;
+}
+
+.title-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;  /*le dices que la imagen con float solo aplica en su respectivo bloque*/
+}
+
+.title-principal:first-letter{
+    font-weight: bold;
+
+}
+
+.main{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+ main{
+    width: 100%;
+    margin: auto;
+ }
+.main p {
+    margin:  0 0 1em;
+    font-size: 20px;
+   
+}
+
+.main strong{
+    font-weight: bold;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin:  0 20px 20px 0;
+}
+
+.map{
+    padding: 3em 0;
+    background: linear-gradient( #fefefefe, #888888); /*(90deg, n 50%)*/
+}
+
+.map p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.map-contaniner{
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.menu{
+    padding: 3em 0;
+    background: #888888;
+    /*box-shadow: inset 0 0 30px yellow; */
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+
+}
+
+.items{
+    line-height: 1.5;
+    
+}
+
+.items:before{ 
+    content:"☙";
+}
+
+.items:first-child{ /*:nth-child(n) para cambiar la linea de texto que queremos*/
+    font-weight: bold;
+}
+
+.imgDiferencial{
+    width: 60%;
+    opacity: 60%;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 10px #000000 ;
+}
+
+.imgDiferencial:hover{ 
+    opacity: 100%;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 10px #000000 ;
+
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+
+    }
+
+    nav{
+        position: static;
+    }
+    .box, .main, .map-contaniner, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imgDiferencial{
+        width: 100%;
+    }
+}
